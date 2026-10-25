@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Pastel Light Theme System */
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f1f5f9;
+
+  --border-light: #e2e8f0;
+  --border-subtle: #cbd5e1;
+
+  /* Pastel Palette Tokens */
+  --pastel-mint: #d1fae5;
+  --pastel-mint-text: #047857;
+  --pastel-mint-accent: #10b981;
+
+  --pastel-sky: #e0f2fe;
+  --pastel-sky-text: #0369a1;
+  --pastel-sky-accent: #0284c7;
+
+  --pastel-amber: #fef3c7;
+  --pastel-amber-text: #b45309;
+  --pastel-amber-accent: #f59e0b;
+
+  --pastel-rose: #ffe4e6;
+  --pastel-rose-text: #be123c;
+  --pastel-rose-accent: #f43f5e;
+
+  --pastel-lavender: #e0e7ff;
+  --pastel-lavender-text: #4338ca;
+  --pastel-lavender-accent: #6366f1;
+
+  --text-dark: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 20px -2px rgba(148, 163, 184, 0.25), 0 2px 6px -1px rgba(148, 163, 184, 0.15);
+  --shadow-hover: 0 10px 30px -4px rgba(148, 163, 184, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(224, 242, 254, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(224, 231, 255, 0.5) 0%, transparent 40%);
+  background-attachment: fixed;
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Solid Pastel Card (NO GLASSMORPHISM) */
+.pastel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 1.35rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pastel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-subtle);
+}
+
+/* Animated Radar Sweep & Ripple */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pastel-pulse {
+  0% {
+    r: 12px;
+    opacity: 0.8;
+  }
+  50% {
+    r: 28px;
+    opacity: 0.25;
+  }
+  100% {
+    r: 12px;
+    opacity: 0.8;
+  }
+}
+
+.animated-sweep {
+  transform-origin: 80px 80px;
+  animation: radar-sweep 3.5s linear infinite;
+}
+
+.animated-pulse-ring {
+  animation: pastel-pulse 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-mint {
+  background: var(--pastel-mint);
+  color: var(--pastel-mint-text);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-amber {
+  background: var(--pastel-amber);
+  color: var(--pastel-amber-text);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-rose {
+  background: var(--pastel-rose);
+  color: var(--pastel-rose-text);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.badge-sky {
+  background: var(--pastel-sky);
+  color: var(--pastel-sky-text);
+  border: 1px solid rgba(2, 132, 199, 0.3);
+}
+
+.badge-lavender {
+  background: var(--pastel-lavender);
+  color: var(--pastel-lavender-text);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 12px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+.btn-primary:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+.btn-secondary:hover {
+  background: var(--bg-card-subtle);
+  border-color: var(--border-subtle);
+}
+
+/* Heatmap Grid Cell */
+.pastel-heatmap-cell {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pastel-heatmap-cell:hover {
+  transform: scale(1.18);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+/* Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.35rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-grid > div[style*="span 4"],
+  .dashboard-grid > div[style*="span 8"] {
+    grid-column: span 1 !important;
+  }
+}
+
+/* ==========================================================================
+   AI Copilot Styles
+   ========================================================================== */
+
+/* Override hover lift for AI card — it's a large interactive panel */
+.ai-copilot-card:hover {
+  transform: none !important;
+}
+
+/* Thinking dots animation */
+.ai-thinking-dots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 20px;
+}
+
+.ai-thinking-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a5b4fc;
+  animation: ai-dot-bounce 1.4s ease-in-out infinite;
+}
+
+.ai-thinking-dots span:nth-child(2) {
+  animation-delay: 0.16s;
+  background: #818cf8;
+}
+
+.ai-thinking-dots span:nth-child(3) {
+  animation-delay: 0.32s;
+  background: #6366f1;
+}
+
+@keyframes ai-dot-bounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Spin animation for refresh icon */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
