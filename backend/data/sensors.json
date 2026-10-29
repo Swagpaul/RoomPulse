@@ -1,0 +1,22 @@
+[
+  {
+    "sensor_id": "esp32-sensor-01",
+    "name": "ESP32 PIR Sensor Setup",
+    "model": "ESP32 + HC-SR501 PIR",
+    "thing_name": "roompulse-room238",
+    "aliases": [
+      "sensor_1",
+      "swagata_room",
+      "roompulse-room238",
+      "room238",
+      "301",
+      "esp32-room238",
+      "esp32-room301",
+      "esp32-spare-01"
+    ],
+    "room_id": "room238",
+    "status": "online",
+    "assigned_at": "2026-10-28T17:54:26.090Z",
+    "last_seen": "2026-10-28T17:54:26.084Z"
+  }
+]

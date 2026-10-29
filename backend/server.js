@@ -58,6 +58,36 @@ function broadcastLiveEvent(eventItem) {
   }
 }
 
+/**
+ * Broadcast sensor registry changes to WebSocket clients
+ */
+function broadcastSensorUpdate(action, sensor) {
+  const message = JSON.stringify({
+    type: 'SENSOR_REGISTRY_CHANGED',
+    payload: { action, sensor, sensors: store.getAllSensors(), rooms: store.getAllRooms() }
+  });
+  for (const client of connectedClients) {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(message);
+    }
+  }
+}
+
+/**
+ * Broadcast alert when a de-assigned sensor triggers motion
+ */
+function broadcastUnassignedAlert(eventItem) {
+  const message = JSON.stringify({
+    type: 'UNASSIGNED_SENSOR_EVENT',
+    payload: eventItem
+  });
+  for (const client of connectedClients) {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(message);
+    }
+  }
+}
+
 /* ==========================================================================
    AWS IoT CORE / INGESTION WEBHOOK ROUTE
    ========================================================================== */
@@ -65,6 +95,7 @@ function broadcastLiveEvent(eventItem) {
  * Ingestion Endpoint (§6a & §4 in cloud.md)
  * Receives MQTT payloads from AWS IoT Core Rule or Simulator
  * Normalizes device uptime timestamp to ISO 8601 UTC server wall-clock time.
+ * Resolves target room from manual sensor association!
  */
 app.post(['/api/events', '/'], (req, res) => {
   console.log('[Ingest Hit] Incoming POST request:', req.body);
@@ -93,41 +124,144 @@ app.post(['/api/events', '/'], (req, res) => {
 
   // Ensure default fallback values so test events from AWS Console work seamlessly
   const normalizedPayload = {
-    room_id: payload.room_id || 'room238',
+    sensor_id: payload.sensor_id || payload.device_id || payload.thing_name || null,
+    room_id: payload.room_id || null,
     event: payload.event || (payload.message ? 'motion_detected' : 'motion_detected'),
     timestamp_ms: payload.timestamp_ms || Date.now(),
     duration_ms: payload.duration_ms || null
   };
 
-  // Add event to store with server-side ISO 8601 UTC timestamp
+  // Add event to store with server-side ISO 8601 UTC timestamp and sensor association resolution
   const eventItem = store.addEvent(normalizedPayload);
+
+  if (eventItem.unassigned) {
+    console.log(`[Ingest Alert] Motion received from de-assigned sensor "${eventItem.sensor_id}". No room associated.`);
+    broadcastUnassignedAlert(eventItem);
+    return res.status(200).json({
+      status: 'unassigned_sensor',
+      message: `Sensor "${eventItem.sensor_id}" is de-assigned. Please associate it with a room in the Sensor Manager.`,
+      event: eventItem
+    });
+  }
 
   // Broadcast to live dashboard via WebSockets
   broadcastLiveEvent(eventItem);
 
-  console.log(`[Ingest] Stamped & stored event for room ${eventItem.room_id}: ${eventItem.event}`);
+  console.log(`[Ingest] Stamped & stored event for room ${eventItem.room_id} (Sensor: ${eventItem.sensor_id}): ${eventItem.event}`);
   return res.status(201).json({ status: 'success', event: eventItem });
 });
 
 /**
  * Trigger manual test simulation
+ * Supports testing either by room_id or by sensor_id to verify associations
  */
 app.post('/api/simulate', (req, res) => {
-  const roomId = req.body.room_id || 'room238';
+  const sensorId = req.body.sensor_id || null;
+  const roomId = req.body.room_id || null;
   const eventType = req.body.event || 'motion_detected';
   const durationMs = req.body.duration_ms || (eventType === 'motion_cleared' ? 4200 : null);
 
   const payload = {
-    room_id: roomId,
+    sensor_id: sensorId,
+    room_id: roomId || (!sensorId ? 'room238' : null),
     event: eventType,
     timestamp_ms: Math.floor(Math.random() * 200000) + 10000,
     duration_ms: durationMs
   };
 
   const eventItem = store.addEvent(payload);
+
+  if (eventItem.unassigned) {
+    broadcastUnassignedAlert(eventItem);
+    return res.json({
+      status: 'unassigned',
+      message: `Simulated event on de-assigned sensor "${eventItem.sensor_id}". Associate with a room to chart telemetry.`,
+      event: eventItem
+    });
+  }
+
   broadcastLiveEvent(eventItem);
 
   return res.json({ status: 'simulated', event: eventItem });
+});
+
+/* ==========================================================================
+   SENSOR & HARDWARE ASSOCIATION ROUTES
+   ========================================================================== */
+
+// 1. GET all sensors and current room associations
+app.get('/api/sensors', (req, res) => {
+  res.json({
+    sensors: store.getAllSensors(),
+    rooms: store.getAllRooms()
+  });
+});
+
+// 2. Register a new sensor / IoT setup
+app.post('/api/sensors', (req, res) => {
+  try {
+    const { sensor_id, name, model, thing_name, room_id } = req.body;
+    if (!sensor_id) {
+      return res.status(400).json({ error: 'sensor_id is required' });
+    }
+    const sensor = store.registerSensor({ sensor_id, name, model, thing_name, room_id });
+    broadcastSensorUpdate('registered', sensor);
+    res.status(201).json({ status: 'success', sensor });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 3. Manually associate a sensor with a particular room
+app.all(['/api/sensors/:sensor_id/assign'], (req, res) => {
+  const { sensor_id } = req.params;
+  const { room_id } = req.body;
+  if (!room_id) {
+    return res.status(400).json({ error: 'room_id is required for association' });
+  }
+  const sensor = store.assignSensor(sensor_id, room_id);
+  if (!sensor) {
+    return res.status(404).json({ error: `Sensor "${sensor_id}" not found` });
+  }
+  broadcastSensorUpdate('assigned', sensor);
+  res.json({
+    status: 'success',
+    message: `Sensor "${sensor_id}" manually associated with ${sensor.room_id}`,
+    sensor
+  });
+});
+
+// 4. Manually de-assign a sensor so it can be associated with another room
+app.all(['/api/sensors/:sensor_id/deassign'], (req, res) => {
+  const { sensor_id } = req.params;
+  const sensor = store.deassignSensor(sensor_id);
+  if (!sensor) {
+    return res.status(404).json({ error: `Sensor "${sensor_id}" not found` });
+  }
+  broadcastSensorUpdate('deassigned', sensor);
+  res.json({
+    status: 'success',
+    message: `Sensor "${sensor_id}" de-assigned and returned to unassigned standby pool`,
+    sensor
+  });
+});
+
+// 5. Delete a sensor
+app.delete('/api/sensors/:sensor_id', (req, res) => {
+  const { sensor_id } = req.params;
+  const success = store.deleteSensor(sensor_id);
+  if (!success) {
+    return res.status(404).json({ error: `Sensor "${sensor_id}" not found` });
+  }
+  broadcastSensorUpdate('deleted', { sensor_id });
+  res.json({ status: 'success', message: `Sensor "${sensor_id}" deleted` });
+});
+
+// 6. Get sensor associated with a specific room
+app.get('/rooms/:room_id/sensor', (req, res) => {
+  const { room_id } = req.params;
+  const sensor = store.getSensorByRoom(room_id);
+  res.json({ room_id, sensor: sensor || null });
 });
 
 /* ==========================================================================
@@ -227,6 +361,7 @@ server.listen(PORT, () => {
   console.log(`🔌 WebSockets Live Stream: ws://localhost:${PORT}`);
   console.log(`🤖 AI Insights:  GET  http://localhost:${PORT}/api/ai/insights/room238`);
   console.log(`💬 AI Chat:      POST http://localhost:${PORT}/api/ai/chat`);
+  console.log(`🧭 Sensor Assoc: GET  http://localhost:${PORT}/api/sensors`);
   console.log(`🔑 Gemini API:   ${process.env.GEMINI_API_KEY ? 'CONFIGURED ✅' : 'NOT SET (using local fallback)'}`);
   console.log(`===================================================`);
 });

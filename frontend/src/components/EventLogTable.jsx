@@ -12,7 +12,7 @@ export default function EventLogTable({ events }) {
           Live Event Ingestion Stream
         </h3>
         <span style={{ fontSize: '0.78rem', color: '#64748b' }}>
-          Showing latest {recentEvents.length} events
+          Showing latest {recentEvents.length} motion telemetry events
         </span>
       </div>
 
@@ -23,13 +23,13 @@ export default function EventLogTable({ events }) {
               <th style={{ padding: '0.6rem 0.8rem', fontWeight: 600 }}>Server Timestamp (UTC ISO)</th>
               <th style={{ padding: '0.6rem 0.8rem', fontWeight: 600 }}>Event Type</th>
               <th style={{ padding: '0.6rem 0.8rem', fontWeight: 600 }}>Duration</th>
-              <th style={{ padding: '0.6rem 0.8rem', fontWeight: 600 }}>Device Uptime (millis)</th>
+              <th style={{ padding: '0.6rem 0.8rem', fontWeight: 600 }}>Device Uptime</th>
             </tr>
           </thead>
           <tbody>
             {recentEvents.length === 0 ? (
-              <tr>
-                <td colSpan="4" style={{ padding: '2rem', textAlign: 'center', color: '#94a3b8' }}>
+              <tr key="empty-row">
+                <td colSpan={4} style={{ padding: '2rem', textAlign: 'center', color: '#94a3b8' }}>
                   No events recorded yet.
                 </td>
               </tr>
@@ -38,7 +38,7 @@ export default function EventLogTable({ events }) {
                 const isDetected = evt.event === 'motion_detected';
                 return (
                   <tr
-                    key={evt.id || evt.timestamp}
+                    key={evt.id || `${evt.timestamp}-${evt.event}`}
                     style={{
                       borderBottom: '1px solid #f8fafc',
                       transition: 'background 0.15s ease'

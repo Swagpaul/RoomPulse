@@ -1,14 +1,16 @@
 # RoomPulse
 
-RoomPulse is a privacy-preserving room occupancy monitoring system. It uses anonymous motion events from an ESP32 and PIR sensor to provide a live React dashboard, backend analytics, anomaly detection, and optional AWS IoT integration.
+RoomPulse is a privacy-preserving room occupancy monitoring system. It uses anonymous motion events from an ESP32 and PIR sensor to provide a live React dashboard, backend analytics, anomaly detection, manual sensor-to-room association, and optional AWS IoT integration.
 
 RoomPulse does not use cameras, microphones, or identity data.
 
 ## Features
 
 - Live room occupancy and motion activity dashboard
+- **Manual Sensor & Room Association**: Associate physical ESP32 PIR sensors to specific rooms on the fly
+- **Sensor De-assignment & Re-assignment**: De-assign sensors into a standby pool to relocate them between rooms anytime
 - Activity heatmap and hourly activity charts
-- Motion event log
+- Motion event log with sensor source tracing
 - Anomaly detection for unusual activity patterns
 - AI copilot interface for dashboard insights
 - Local event simulator for development
@@ -21,14 +23,18 @@ RoomPulse does not use cameras, microphones, or identity data.
 RoomPulse/
 ├── backend/
 │   ├── aws/              # AWS IoT integration and ingest Lambda
-│   ├── data/             # Local event data
+│   ├── data/             # Local event data and sensor registry (db.json, sensors.json)
 │   ├── ai.js             # AI insight helpers
 │   ├── analytics.js      # Activity and anomaly analytics
 │   ├── server.js         # Express API and WebSocket server
 │   ├── simulator.js      # Local motion event simulator
-│   └── store.js          # Event persistence
+│   └── store.js          # Event persistence & sensor association manager
 ├── frontend/
 │   ├── src/              # React dashboard
+│   │   ├── components/
+│   │   │   ├── SensorManagerModal.jsx # Sensor association manager dialog
+│   │   │   ├── MotionRadar.jsx        # Live radar with assigned sensor badge
+│   │   │   └── ...
 │   ├── public/           # Static assets
 │   └── package.json
 ├── cloud.md              # Cloud architecture and integration guide
@@ -78,11 +84,22 @@ cd backend
 npm run sim
 ```
 
-## Backend API
+## Sensor Association & Hardware Management
 
-The backend provides HTTP endpoints for events, analytics, and health checks. It also exposes a WebSocket endpoint for live dashboard updates.
+Sensors / IoT setups are decoupled from physical rooms:
 
-The frontend is configured to communicate with the local backend during development. See [`backend/server.js`](./backend/server.js) for the available routes and [`cloud.md`](./cloud.md) for the event and storage contract.
+- **Association**: In the dashboard, click **"Sensors & Setup"** in the top navbar to associate an IoT sensor (e.g. `esp32-room238`) with any room (e.g. `room238`, `room301`, or a new custom room like `room104`).
+- **De-assignment**: Click **"De-assign"** on any sensor card. The hardware is immediately detached from the room and returned to the unassigned standby pool. If motion is detected from a de-assigned sensor, the system alerts you and ignores the telemetry until it is re-associated.
+- **Re-assignment / Relocation**: Select a target room from the dropdown and click **"Move / Re-assign"** to deploy the hardware in another room.
+
+### Sensor API Endpoints
+
+- `GET /api/sensors`: List all registered sensors, current room associations, and statuses.
+- `POST /api/sensors`: Register a new sensor `{ sensor_id, name, model, thing_name, room_id }`.
+- `POST /api/sensors/:sensor_id/assign`: Manually associate a sensor to a room `{ room_id }`.
+- `POST /api/sensors/:sensor_id/deassign`: De-assign a sensor, placing it in the unassigned standby pool.
+- `DELETE /api/sensors/:sensor_id`: Remove a sensor registration.
+- `GET /rooms/:room_id/sensor`: Get the sensor currently associated with a given room.
 
 ## AWS IoT integration
 
@@ -131,13 +148,14 @@ Motion events use the following shape:
 
 ```json
 {
-  "room_id": "301",
+  "sensor_id": "esp32-room238",
+  "room_id": "room238",
   "event": "motion_detected",
   "timestamp_ms": 137930
 }
 ```
 
-Supported event types are `motion_detected` and `motion_cleared`. The device timestamp is retained for debugging only; the backend assigns the authoritative wall-clock timestamp when it receives an event.
+Supported event types are `motion_detected` and `motion_cleared`. The backend assigns the authoritative wall-clock timestamp and maps the sensor to the room according to the manual association registry.
 
 ## Privacy
 

@@ -65,8 +65,16 @@ client.on('message', async (receivedTopic, buffer) => {
     return;
   }
 
-  if (!payload.room_id || !payload.event) {
-    console.error('[Bridge] Ignoring message without room_id or event:', payload);
+  // Extract sensor_id from payload, or derive from MQTT topic (e.g. roompulse/room238/motion)
+  if (!payload.sensor_id && !payload.device_id) {
+    const parts = receivedTopic.split('/');
+    if (parts.length >= 2 && parts[1] !== '+') {
+      payload.sensor_id = parts[1];
+    }
+  }
+
+  if (!payload.event) {
+    console.error('[Bridge] Ignoring message without event:', payload);
     return;
   }
 
@@ -83,7 +91,12 @@ client.on('message', async (receivedTopic, buffer) => {
       return;
     }
 
-    console.log(`[Bridge] Forwarded ${payload.room_id} -> ${payload.event}`);
+    const data = await response.json();
+    if (data.status === 'unassigned_sensor') {
+      console.log(`[Bridge] ⚠️ Event from sensor ${payload.sensor_id} received, but sensor is DE-ASSIGNED from all rooms.`);
+    } else {
+      console.log(`[Bridge] Forwarded ${payload.sensor_id || payload.room_id} -> Room ${data.event?.room_id}: ${payload.event}`);
+    }
   } catch (error) {
     console.error(`[Bridge] Could not reach backend at ${backendUrl}: ${error.message}`);
   }
