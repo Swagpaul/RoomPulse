@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { BarChart3 } from 'lucide-react';
+import { BarChart3, Calendar } from 'lucide-react';
 
-export default function HourlyChart({ hourlyData }) {
+export default function HourlyChart({ hourlyData, selectedDate, isToday = true, dateLabel }) {
   const [hoveredHour, setHoveredHour] = useState(null);
 
   if (!hourlyData || hourlyData.length === 0) return null;
@@ -11,11 +11,31 @@ export default function HourlyChart({ hourlyData }) {
 
   return (
     <div className="pastel-card" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <BarChart3 size={18} color="#0284c7" />
-          Hourly Occupancy Distribution
-        </h3>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
+            <BarChart3 size={18} color="#0284c7" />
+            Hourly Occupancy Distribution
+          </h3>
+          {selectedDate && (
+            <span style={{
+              fontSize: '0.74rem',
+              fontWeight: 600,
+              padding: '0.15rem 0.55rem',
+              borderRadius: '999px',
+              background: isToday ? '#ecfdf5' : '#f0f9ff',
+              color: isToday ? '#059669' : '#0284c7',
+              border: `1px solid ${isToday ? '#a7f3d0' : '#bae6fd'}`,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.25rem'
+            }}>
+              <Calendar size={12} />
+              {dateLabel || selectedDate}
+            </span>
+          )}
+        </div>
+
         {hoveredHour !== null ? (
           <div style={{ fontSize: '0.82rem', color: '#0369a1', background: '#e0f2fe', padding: '0.25rem 0.65rem', borderRadius: '8px', fontWeight: 600 }}>
             Hour {hoveredHour.hour}:00 &bull; {hoveredHour.count} Motion Events
@@ -67,7 +87,7 @@ export default function HourlyChart({ hourlyData }) {
         {/* X-Axis Hour Labels */}
         <div style={{
           display: 'flex',
-          justify: 'space-between',
+          justifyContent: 'space-between',
           marginTop: '0.6rem',
           fontSize: '0.7rem',
           color: '#64748b',

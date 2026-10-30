@@ -3,7 +3,7 @@ import cors from 'cors';
 import { createServer } from 'http';
 import { WebSocketServer, WebSocket } from 'ws';
 import { store } from './store.js';
-import { getHourlyActivity, getActivitySummary, detectAnomalies } from './analytics.js';
+import { getHourlyActivity, getActivitySummary, detectAnomalies, getDailyActivity, getAvailableDates } from './analytics.js';
 import { generateInsights, chatWithAI, getSuggestedQuestions } from './ai.js';
 
 const app = express();
@@ -265,7 +265,7 @@ app.get('/rooms/:room_id/sensor', (req, res) => {
 });
 
 /* ==========================================================================
-   REST API CONTRACT ENDPOINTS (§7 in cloud.md)
+   REST API CONTRACT ENDPOINTS (§7 in cloud.md) & ACTIVITY HISTORY
    ========================================================================== */
 
 // 1. GET List of registered rooms
@@ -274,11 +274,28 @@ app.get('/rooms', (req, res) => {
   res.json({ rooms });
 });
 
-// 2. GET /rooms/{room_id}/events?start={ISO8601}&end={ISO8601}
+// 2. GET /rooms/{room_id}/events?start={ISO8601}&end={ISO8601}&date={YYYY-MM-DD}&limit={number}
 app.get('/rooms/:room_id/events', (req, res) => {
   const { room_id } = req.params;
-  const { start, end } = req.query;
-  const events = store.getEvents(room_id, start, end);
+  const { start, end, date, limit } = req.query;
+
+  let events = [];
+  if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    const startIso = `${date}T00:00:00.000Z`;
+    const endIso = `${date}T23:59:59.999Z`;
+    events = store.getEvents(room_id, startIso, endIso);
+    if (events.length === 0) {
+      events = store.getEvents(room_id).filter(e => e.timestamp && e.timestamp.startsWith(date));
+    }
+  } else {
+    events = store.getEvents(room_id, start, end);
+  }
+
+  if (limit) {
+    const l = parseInt(limit, 10);
+    if (l > 0) events = events.slice(0, l);
+  }
+
   res.json(events);
 });
 
@@ -290,15 +307,30 @@ app.get('/rooms/:room_id/activity/hourly', (req, res) => {
   res.json(hourly);
 });
 
-// 4. GET /rooms/{room_id}/activity/summary?range={week|day|month}
+// 4. GET /rooms/{room_id}/activity/daily?days={number}&end={YYYY-MM-DD} — Multi-Day Historical Trend
+app.get('/rooms/:room_id/activity/daily', (req, res) => {
+  const { room_id } = req.params;
+  const { days, end } = req.query;
+  const daily = getDailyActivity(room_id, days || 7, end);
+  res.json(daily);
+});
+
+// 5. GET /rooms/{room_id}/activity/dates — Distinct dates with recorded activity
+app.get('/rooms/:room_id/activity/dates', (req, res) => {
+  const { room_id } = req.params;
+  const dates = getAvailableDates(room_id);
+  res.json({ room_id, dates });
+});
+
+// 6. GET /rooms/{room_id}/activity/summary?range={week|day|month}&date={YYYY-MM-DD}
 app.get('/rooms/:room_id/activity/summary', (req, res) => {
   const { room_id } = req.params;
-  const { range } = req.query;
-  const summary = getActivitySummary(room_id, range || 'week');
+  const { range, date } = req.query;
+  const summary = getActivitySummary(room_id, range || 'week', date);
   res.json(summary);
 });
 
-// 5. GET /rooms/{room_id}/anomalies?range={week|day|month}
+// 7. GET /rooms/{room_id}/anomalies?range={week|day|month}
 app.get('/rooms/:room_id/anomalies', (req, res) => {
   const { room_id } = req.params;
   const { range } = req.query;
@@ -310,7 +342,7 @@ app.get('/rooms/:room_id/anomalies', (req, res) => {
    AI INTELLIGENCE ENDPOINTS
    ========================================================================== */
 
-// 6. GET /api/ai/insights/:room_id — Generate AI intelligence report
+// 8. GET /api/ai/insights/:room_id — Generate AI intelligence report
 app.get('/api/ai/insights/:room_id', async (req, res) => {
   const { room_id } = req.params;
   const { range } = req.query;
@@ -325,7 +357,7 @@ app.get('/api/ai/insights/:room_id', async (req, res) => {
   }
 });
 
-// 7. POST /api/ai/chat — Interactive AI chat about room data
+// 9. POST /api/ai/chat — Interactive AI chat about room data
 app.post('/api/ai/chat', async (req, res) => {
   const { room_id, question, history } = req.body;
   if (!question) {
@@ -342,7 +374,7 @@ app.post('/api/ai/chat', async (req, res) => {
   }
 });
 
-// 8. GET /api/ai/suggestions/:room_id — Get contextual suggested questions
+// 10. GET /api/ai/suggestions/:room_id — Get contextual suggested questions
 app.get('/api/ai/suggestions/:room_id', (req, res) => {
   const { room_id } = req.params;
   const questions = getSuggestedQuestions(room_id);
@@ -362,6 +394,7 @@ server.listen(PORT, () => {
   console.log(`🤖 AI Insights:  GET  http://localhost:${PORT}/api/ai/insights/room238`);
   console.log(`💬 AI Chat:      POST http://localhost:${PORT}/api/ai/chat`);
   console.log(`🧭 Sensor Assoc: GET  http://localhost:${PORT}/api/sensors`);
+  console.log(`📅 History Daily: GET  http://localhost:${PORT}/rooms/room238/activity/daily`);
   console.log(`🔑 Gemini API:   ${process.env.GEMINI_API_KEY ? 'CONFIGURED ✅' : 'NOT SET (using local fallback)'}`);
   console.log(`===================================================`);
 });

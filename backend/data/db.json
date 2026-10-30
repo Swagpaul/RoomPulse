@@ -10102,5 +10102,3905 @@
     "device_timestamp_ms": 87192,
     "duration_ms": null,
     "unassigned": false
+  },
+  {
+    "id": "evt_1793237457215_3kpe7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:30:57.215Z",
+    "device_timestamp_ms": 192600,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237458103_2y5mt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:30:58.103Z",
+    "device_timestamp_ms": 193801,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237479091_s7xsk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:31:19.091Z",
+    "device_timestamp_ms": 214452,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237484159_iqmkz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:31:24.159Z",
+    "device_timestamp_ms": 219303,
+    "duration_ms": 4851,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237490489_u6jyd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:31:30.489Z",
+    "device_timestamp_ms": 225854,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237492029_xn2cs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:31:32.029Z",
+    "device_timestamp_ms": 227755,
+    "duration_ms": 1901,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237496350_0g224",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:31:36.350Z",
+    "device_timestamp_ms": 232056,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237497603_lhjse",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:31:37.603Z",
+    "device_timestamp_ms": 233307,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237503091_1mri7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:31:43.091Z",
+    "device_timestamp_ms": 238458,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237508123_c71zj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:31:48.123Z",
+    "device_timestamp_ms": 243059,
+    "duration_ms": 4601,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237513053_ufukj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:31:53.053Z",
+    "device_timestamp_ms": 248460,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237514737_kyf2d",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:31:54.737Z",
+    "device_timestamp_ms": 250461,
+    "duration_ms": 2001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237523369_1lm1g",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:03.369Z",
+    "device_timestamp_ms": 258512,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237523996_4dlin",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:03.996Z",
+    "device_timestamp_ms": 259713,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237533085_1y248",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:13.085Z",
+    "device_timestamp_ms": 268514,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237533983_8ena7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:13.983Z",
+    "device_timestamp_ms": 269715,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237543280_8t9pd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:23.280Z",
+    "device_timestamp_ms": 278966,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237544903_vptfe",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:24.903Z",
+    "device_timestamp_ms": 280617,
+    "duration_ms": 1651,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237551886_60j5i",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:31.886Z",
+    "device_timestamp_ms": 287568,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237553589_qb3fo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:33.589Z",
+    "device_timestamp_ms": 288769,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237559134_n0k7k",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:39.134Z",
+    "device_timestamp_ms": 294821,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237560696_p2se5",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:40.696Z",
+    "device_timestamp_ms": 296072,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237571652_op1va",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:32:51.652Z",
+    "device_timestamp_ms": 307023,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237573270_xknqi",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:32:53.270Z",
+    "device_timestamp_ms": 308474,
+    "duration_ms": 1451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237628110_chj54",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:33:48.110Z",
+    "device_timestamp_ms": 363327,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237628852_elisj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:33:48.851Z",
+    "device_timestamp_ms": 364578,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237650886_bhsdx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:34:10.886Z",
+    "device_timestamp_ms": 386180,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237655600_38edd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:34:15.600Z",
+    "device_timestamp_ms": 391331,
+    "duration_ms": 5151,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237698868_muiwv",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:34:58.868Z",
+    "device_timestamp_ms": 433983,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237699535_56eml",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:34:59.535Z",
+    "device_timestamp_ms": 435234,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237704946_cucfz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:35:04.946Z",
+    "device_timestamp_ms": 440135,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237705699_jc1x1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:35:05.698Z",
+    "device_timestamp_ms": 441386,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237710395_e887h",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:35:10.395Z",
+    "device_timestamp_ms": 446087,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237712333_8xfj0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:35:12.333Z",
+    "device_timestamp_ms": 447288,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237716298_f9jzc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:35:16.298Z",
+    "device_timestamp_ms": 452039,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237717859_ob9fs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:35:17.859Z",
+    "device_timestamp_ms": 453240,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237726335_4gj0f",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:35:26.335Z",
+    "device_timestamp_ms": 462041,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237727906_hkhsp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:35:27.906Z",
+    "device_timestamp_ms": 463292,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237736464_ad2uz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T01:35:36.464Z",
+    "device_timestamp_ms": 472093,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793237737993_60lh8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T01:35:37.993Z",
+    "device_timestamp_ms": 473294,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245134491_3tffk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:38:54.491Z",
+    "device_timestamp_ms": 371960,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245134502_ejrr8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:38:54.501Z",
+    "device_timestamp_ms": 374211,
+    "duration_ms": 2251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245199026_ay0vs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:39:59.026Z",
+    "device_timestamp_ms": 439164,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245200912_i67z1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:00.912Z",
+    "device_timestamp_ms": 441365,
+    "duration_ms": 2201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245216307_vbg08",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:16.307Z",
+    "device_timestamp_ms": 455667,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245217628_spb34",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:17.628Z",
+    "device_timestamp_ms": 457768,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245220789_q77ju",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:20.789Z",
+    "device_timestamp_ms": 455667,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245222241_hr3xl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:22.241Z",
+    "device_timestamp_ms": 457768,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245225089_swore",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:25.089Z",
+    "device_timestamp_ms": 455667,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245226692_tgtxx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:26.692Z",
+    "device_timestamp_ms": 457768,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245227696_ejsur",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:27.696Z",
+    "device_timestamp_ms": 466919,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245232444_z8klr",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:32.444Z",
+    "device_timestamp_ms": 466919,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245233440_pr7by",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:33.440Z",
+    "device_timestamp_ms": 470320,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245236354_0jnks",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:36.354Z",
+    "device_timestamp_ms": 466919,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245237718_1ibhy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:37.718Z",
+    "device_timestamp_ms": 470320,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245238182_xdt13",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:38.182Z",
+    "device_timestamp_ms": 477021,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245240220_vefi0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:40.220Z",
+    "device_timestamp_ms": 480272,
+    "duration_ms": 3251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245242056_l6vin",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:42.056Z",
+    "device_timestamp_ms": 470320,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245242348_xvp3l",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:42.348Z",
+    "device_timestamp_ms": 477021,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245244262_1jcxe",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:44.262Z",
+    "device_timestamp_ms": 484723,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245244434_9ploz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:44.434Z",
+    "device_timestamp_ms": 480272,
+    "duration_ms": 3251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245245609_2f3nl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:45.609Z",
+    "device_timestamp_ms": 486074,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245246679_utoor",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:46.679Z",
+    "device_timestamp_ms": 477021,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245248387_wpqp5",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:48.387Z",
+    "device_timestamp_ms": 484723,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245248748_m9wca",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:48.748Z",
+    "device_timestamp_ms": 480272,
+    "duration_ms": 3251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245249842_mrqm0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:49.842Z",
+    "device_timestamp_ms": 486074,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245250029_fwp46",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:50.029Z",
+    "device_timestamp_ms": 490425,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245251206_jth06",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:51.206Z",
+    "device_timestamp_ms": 491676,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245252710_bp88g",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:52.710Z",
+    "device_timestamp_ms": 484723,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245254228_1uq2p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:54.228Z",
+    "device_timestamp_ms": 486074,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245254233_v865q",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:54.233Z",
+    "device_timestamp_ms": 490425,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245255320_586hn",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:55.320Z",
+    "device_timestamp_ms": 495827,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245255422_o0z4t",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:55.422Z",
+    "device_timestamp_ms": 491676,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245258140_s3keh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:40:58.140Z",
+    "device_timestamp_ms": 498629,
+    "duration_ms": 2802,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245258606_of0s8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:40:58.606Z",
+    "device_timestamp_ms": 490425,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245262391_2l20b",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:02.391Z",
+    "device_timestamp_ms": 502830,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245265907_ngbpe",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:05.907Z",
+    "device_timestamp_ms": 506381,
+    "duration_ms": 3551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245266671_tf1ca",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:06.671Z",
+    "device_timestamp_ms": 502830,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245270121_xarxe",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:10.121Z",
+    "device_timestamp_ms": 506381,
+    "duration_ms": 3551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245270195_sgbuh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:10.195Z",
+    "device_timestamp_ms": 510682,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245271428_js4rh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:11.428Z",
+    "device_timestamp_ms": 502830,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245272175_vprb9",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:12.175Z",
+    "device_timestamp_ms": 512434,
+    "duration_ms": 1752,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245274403_0z27j",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:14.403Z",
+    "device_timestamp_ms": 510682,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245274472_fcjgd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:14.472Z",
+    "device_timestamp_ms": 506381,
+    "duration_ms": 3551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245276433_mxp53",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:16.433Z",
+    "device_timestamp_ms": 512434,
+    "duration_ms": 1752,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245277760_f6u5n",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:17.760Z",
+    "device_timestamp_ms": 518135,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245278760_70qzu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:18.760Z",
+    "device_timestamp_ms": 510682,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245279246_21vpg",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:19.246Z",
+    "device_timestamp_ms": 519686,
+    "duration_ms": 1551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245280829_78zhp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:20.829Z",
+    "device_timestamp_ms": 512434,
+    "duration_ms": 1752,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245281963_u3st7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:21.963Z",
+    "device_timestamp_ms": 518135,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245283534_4j6qw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:23.534Z",
+    "device_timestamp_ms": 519686,
+    "duration_ms": 1551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245284339_fuivn",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:24.339Z",
+    "device_timestamp_ms": 524837,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245285598_hpgm8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:25.598Z",
+    "device_timestamp_ms": 526088,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245286256_m7fzo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:26.256Z",
+    "device_timestamp_ms": 518135,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245299383_kli6r",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:41:39.383Z",
+    "device_timestamp_ms": 539839,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245302736_fagaw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:42.736Z",
+    "device_timestamp_ms": 543240,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245306934_32d0a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:46.934Z",
+    "device_timestamp_ms": 543240,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245311519_mffet",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:41:51.519Z",
+    "device_timestamp_ms": 543240,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245343042_yyyl5",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:23.042Z",
+    "device_timestamp_ms": 582541,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245347150_1n2dt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:27.150Z",
+    "device_timestamp_ms": 585942,
+    "duration_ms": 3401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245361764_svuru",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:41.764Z",
+    "device_timestamp_ms": 600843,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245365957_lfg0b",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:45.957Z",
+    "device_timestamp_ms": 600843,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245366662_wvidp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:46.662Z",
+    "device_timestamp_ms": 602194,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245370788_2ivlw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:50.788Z",
+    "device_timestamp_ms": 600843,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245370827_qwzsf",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:50.827Z",
+    "device_timestamp_ms": 602194,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245370967_1wvgo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:50.967Z",
+    "device_timestamp_ms": 610595,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245372462_oc949",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:52.462Z",
+    "device_timestamp_ms": 611846,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245374839_pc7om",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:54.839Z",
+    "device_timestamp_ms": 602194,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245375171_ep8dv",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:42:55.171Z",
+    "device_timestamp_ms": 610595,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245376569_0sy8o",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:42:56.569Z",
+    "device_timestamp_ms": 611846,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245380048_2gi32",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:00.048Z",
+    "device_timestamp_ms": 610595,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245381140_lxkk1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:01.140Z",
+    "device_timestamp_ms": 611846,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245383194_nanmb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:03.194Z",
+    "device_timestamp_ms": 622547,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245384750_z8v13",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:04.750Z",
+    "device_timestamp_ms": 624248,
+    "duration_ms": 1701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245387430_ka4cs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:07.430Z",
+    "device_timestamp_ms": 622547,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245389454_ya1g5",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:09.454Z",
+    "device_timestamp_ms": 624248,
+    "duration_ms": 1701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245389618_lj7fq",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:09.618Z",
+    "device_timestamp_ms": 629699,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245391777_ujnkj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:11.777Z",
+    "device_timestamp_ms": 622547,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245393113_e6rk1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:13.113Z",
+    "device_timestamp_ms": 633200,
+    "duration_ms": 3501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245393316_vywy7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:13.316Z",
+    "device_timestamp_ms": 624248,
+    "duration_ms": 1701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245393742_lazn5",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:13.742Z",
+    "device_timestamp_ms": 629699,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245397381_0cwej",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:17.381Z",
+    "device_timestamp_ms": 633200,
+    "duration_ms": 3501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245397972_57sg8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:17.972Z",
+    "device_timestamp_ms": 637951,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245398042_vp6s2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:18.042Z",
+    "device_timestamp_ms": 629699,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245401750_qhiy3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:21.750Z",
+    "device_timestamp_ms": 633200,
+    "duration_ms": 3501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245402210_11m89",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:22.210Z",
+    "device_timestamp_ms": 637951,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245404755_y7twu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:24.755Z",
+    "device_timestamp_ms": 644052,
+    "duration_ms": 6101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245406486_j3q65",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:26.486Z",
+    "device_timestamp_ms": 637951,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245408913_9x63b",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:28.913Z",
+    "device_timestamp_ms": 644052,
+    "duration_ms": 6101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245410857_94ddw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:30.857Z",
+    "device_timestamp_ms": 650303,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245412848_ddkil",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:32.848Z",
+    "device_timestamp_ms": 651954,
+    "duration_ms": 1651,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245413259_ltsli",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:33.259Z",
+    "device_timestamp_ms": 644052,
+    "duration_ms": 6101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245415095_fveez",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:35.095Z",
+    "device_timestamp_ms": 650303,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245417081_q0113",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:37.081Z",
+    "device_timestamp_ms": 651954,
+    "duration_ms": 1651,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245417713_d15oh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:37.713Z",
+    "device_timestamp_ms": 656755,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245419438_e6hch",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:39.437Z",
+    "device_timestamp_ms": 650303,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245421458_9st67",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:41.458Z",
+    "device_timestamp_ms": 651954,
+    "duration_ms": 1651,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245421794_k6j7x",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:41.794Z",
+    "device_timestamp_ms": 656755,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245426465_rhvg4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:46.465Z",
+    "device_timestamp_ms": 656755,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245429075_gkpu3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:49.075Z",
+    "device_timestamp_ms": 658706,
+    "duration_ms": 1951,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245433007_uduq7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:53.007Z",
+    "device_timestamp_ms": 658706,
+    "duration_ms": 1951,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245433876_1uq01",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:53.876Z",
+    "device_timestamp_ms": 669057,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245433918_4xoyj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:53.918Z",
+    "device_timestamp_ms": 672058,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245437217_ytkdq",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:57.217Z",
+    "device_timestamp_ms": 658706,
+    "duration_ms": 1951,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245437806_ssjzd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:57.806Z",
+    "device_timestamp_ms": 677109,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245438183_dj0kk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:43:58.183Z",
+    "device_timestamp_ms": 669057,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245438188_kzc4c",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:58.188Z",
+    "device_timestamp_ms": 672058,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245439968_fu7ul",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:43:59.968Z",
+    "device_timestamp_ms": 680110,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245442074_xwsya",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:02.074Z",
+    "device_timestamp_ms": 677109,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245442493_i9ory",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:02.493Z",
+    "device_timestamp_ms": 669057,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245442547_7vhx9",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:02.547Z",
+    "device_timestamp_ms": 672058,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245444109_ntp2x",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:04.109Z",
+    "device_timestamp_ms": 680110,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245446563_0at8x",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:06.563Z",
+    "device_timestamp_ms": 677109,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245448318_2nxnd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:08.318Z",
+    "device_timestamp_ms": 680110,
+    "duration_ms": 3001,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245449151_4xg2t",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:09.151Z",
+    "device_timestamp_ms": 688211,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245450461_soxf9",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:10.461Z",
+    "device_timestamp_ms": 689662,
+    "duration_ms": 1451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245453319_5g19i",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:13.319Z",
+    "device_timestamp_ms": 688211,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245454599_v5907",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:14.599Z",
+    "device_timestamp_ms": 689662,
+    "duration_ms": 1451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245457669_j7qzf",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:44:17.669Z",
+    "device_timestamp_ms": 688211,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245458941_19v9i",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:44:18.941Z",
+    "device_timestamp_ms": 689662,
+    "duration_ms": 1451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245524982_9surj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:24.982Z",
+    "device_timestamp_ms": 763728,
+    "duration_ms": 50363,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245529228_1ywlp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:29.228Z",
+    "device_timestamp_ms": 767929,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245534447_ek2a2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:34.447Z",
+    "device_timestamp_ms": 773180,
+    "duration_ms": 5251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245538893_m1mfn",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:38.893Z",
+    "device_timestamp_ms": 773180,
+    "duration_ms": 5251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245543528_4zy3s",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:43.528Z",
+    "device_timestamp_ms": 773180,
+    "duration_ms": 5251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245543664_gcnxt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:43.664Z",
+    "device_timestamp_ms": 777831,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245543709_0ib2t",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:43.709Z",
+    "device_timestamp_ms": 779932,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245545605_g49kl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:45.605Z",
+    "device_timestamp_ms": 784283,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245547882_hqlmd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:47.882Z",
+    "device_timestamp_ms": 777831,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245548479_x8nbm",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:48.479Z",
+    "device_timestamp_ms": 779932,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245549513_1dtzy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:49.513Z",
+    "device_timestamp_ms": 784283,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245551509_9flgi",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:51.509Z",
+    "device_timestamp_ms": 786285,
+    "duration_ms": 2002,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245551533_vqw1q",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:51.533Z",
+    "device_timestamp_ms": 790886,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245552248_z7uk4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:52.248Z",
+    "device_timestamp_ms": 777831,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245552300_nmhbx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:52.300Z",
+    "device_timestamp_ms": 779932,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245553849_ja0n8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:53.849Z",
+    "device_timestamp_ms": 784283,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245555802_kdgoo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:45:55.802Z",
+    "device_timestamp_ms": 790886,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245556137_81b9i",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:56.137Z",
+    "device_timestamp_ms": 786285,
+    "duration_ms": 2002,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245559929_0htfk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:45:59.929Z",
+    "device_timestamp_ms": 786285,
+    "duration_ms": 2002,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245560078_51a40",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:00.078Z",
+    "device_timestamp_ms": 790886,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245567180_f3o0y",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:07.180Z",
+    "device_timestamp_ms": 800687,
+    "duration_ms": 9801,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245567184_eem0w",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:07.184Z",
+    "device_timestamp_ms": 805738,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245568294_b7k4y",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:08.294Z",
+    "device_timestamp_ms": 807239,
+    "duration_ms": 1501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245571513_dny3c",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:11.513Z",
+    "device_timestamp_ms": 800687,
+    "duration_ms": 9801,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245571520_7p8u9",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:11.520Z",
+    "device_timestamp_ms": 805738,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245572482_u0s6w",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:12.482Z",
+    "device_timestamp_ms": 807239,
+    "duration_ms": 1501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245575695_04tp1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:15.695Z",
+    "device_timestamp_ms": 805738,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245575742_b6uh6",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:15.742Z",
+    "device_timestamp_ms": 800687,
+    "duration_ms": 9801,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245576888_e53jl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:16.888Z",
+    "device_timestamp_ms": 807239,
+    "duration_ms": 1501,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245578161_j0tmy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:18.161Z",
+    "device_timestamp_ms": 811440,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245578166_ccg3e",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:18.166Z",
+    "device_timestamp_ms": 812791,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245578593_kpg5a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:18.593Z",
+    "device_timestamp_ms": 817492,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245580186_tvvfg",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:20.186Z",
+    "device_timestamp_ms": 819243,
+    "duration_ms": 1751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245582264_yx5yl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:22.264Z",
+    "device_timestamp_ms": 811440,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245582272_rdgyv",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:22.272Z",
+    "device_timestamp_ms": 812791,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245582795_dw9bb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:22.795Z",
+    "device_timestamp_ms": 817492,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245584285_azdab",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:24.285Z",
+    "device_timestamp_ms": 819243,
+    "duration_ms": 1751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245584290_ischr",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:24.289Z",
+    "device_timestamp_ms": 823544,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245585513_ulnwy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:25.512Z",
+    "device_timestamp_ms": 824745,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245586673_ln00u",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:26.673Z",
+    "device_timestamp_ms": 812791,
+    "duration_ms": 1351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245586680_h7v2b",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:26.680Z",
+    "device_timestamp_ms": 811440,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245587463_xq4jb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:27.463Z",
+    "device_timestamp_ms": 817492,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245588763_1dt3j",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:28.763Z",
+    "device_timestamp_ms": 819243,
+    "duration_ms": 1751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245588893_2iogc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:28.893Z",
+    "device_timestamp_ms": 823544,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245589708_jx0ps",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:29.708Z",
+    "device_timestamp_ms": 824745,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245592910_q74f0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:32.910Z",
+    "device_timestamp_ms": 823544,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245594090_ph9sa",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:34.090Z",
+    "device_timestamp_ms": 824745,
+    "duration_ms": 1201,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245595066_w5eq0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:35.066Z",
+    "device_timestamp_ms": 833997,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245599327_bqpva",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:39.327Z",
+    "device_timestamp_ms": 833997,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245603544_026ib",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:43.544Z",
+    "device_timestamp_ms": 833997,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245605013_ntqmk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:45.013Z",
+    "device_timestamp_ms": 838148,
+    "duration_ms": 4151,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245605019_v9du3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:45.019Z",
+    "device_timestamp_ms": 842249,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245605858_h5u04",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:45.858Z",
+    "device_timestamp_ms": 844600,
+    "duration_ms": 2351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245609162_hhtls",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:49.162Z",
+    "device_timestamp_ms": 838148,
+    "duration_ms": 4151,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245609187_l56uy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:49.187Z",
+    "device_timestamp_ms": 842249,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245610073_4kpb3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:50.072Z",
+    "device_timestamp_ms": 844600,
+    "duration_ms": 2351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245610333_zgmpc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:50.333Z",
+    "device_timestamp_ms": 849501,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245613477_x5z6p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:53.477Z",
+    "device_timestamp_ms": 838148,
+    "duration_ms": 4151,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245613544_7h16a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:53.544Z",
+    "device_timestamp_ms": 842249,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245614370_w5uyx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:54.370Z",
+    "device_timestamp_ms": 854202,
+    "duration_ms": 4701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245614460_phkhp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:54.460Z",
+    "device_timestamp_ms": 849501,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245614482_ncmq6",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:54.482Z",
+    "device_timestamp_ms": 844600,
+    "duration_ms": 2351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245618573_2jtal",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:46:58.573Z",
+    "device_timestamp_ms": 854202,
+    "duration_ms": 4701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245618765_b5su4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:58.765Z",
+    "device_timestamp_ms": 849501,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245619454_6htgo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:46:59.454Z",
+    "device_timestamp_ms": 858253,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245622823_9zqua",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:02.823Z",
+    "device_timestamp_ms": 854202,
+    "duration_ms": 4701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245623449_dtqu6",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:03.449Z",
+    "device_timestamp_ms": 862704,
+    "duration_ms": 4451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245623463_6es0x",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:03.463Z",
+    "device_timestamp_ms": 858253,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245627701_umyhc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:07.701Z",
+    "device_timestamp_ms": 862704,
+    "duration_ms": 4451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245627784_j5rny",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:07.784Z",
+    "device_timestamp_ms": 858253,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245632063_5wvz2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:12.063Z",
+    "device_timestamp_ms": 862704,
+    "duration_ms": 4451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245640697_phlv3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:20.697Z",
+    "device_timestamp_ms": 878955,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245643201_nvbtm",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:23.201Z",
+    "device_timestamp_ms": 882306,
+    "duration_ms": 3351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245644346_mk0b4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:24.346Z",
+    "device_timestamp_ms": 878955,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245647755_ukh4c",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:27.755Z",
+    "device_timestamp_ms": 882306,
+    "duration_ms": 3351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245648671_3h1dg",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:28.671Z",
+    "device_timestamp_ms": 878955,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245651906_selkr",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:31.906Z",
+    "device_timestamp_ms": 882306,
+    "duration_ms": 3351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245668398_itzzx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:48.398Z",
+    "device_timestamp_ms": 907858,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245671472_0bn22",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:51.472Z",
+    "device_timestamp_ms": 910609,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245672556_m9pcw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:52.556Z",
+    "device_timestamp_ms": 907858,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245676266_21bzp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:47:56.266Z",
+    "device_timestamp_ms": 910609,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245676567_ehdgh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:56.567Z",
+    "device_timestamp_ms": 915610,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245676965_wq0gf",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:47:56.965Z",
+    "device_timestamp_ms": 907858,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245680180_yq4c1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:00.180Z",
+    "device_timestamp_ms": 910609,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245680480_8un4s",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:00.480Z",
+    "device_timestamp_ms": 915610,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245682678_8492s",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:02.678Z",
+    "device_timestamp_ms": 919361,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245684850_y31ll",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:04.850Z",
+    "device_timestamp_ms": 915610,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245686861_k0hnm",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:06.861Z",
+    "device_timestamp_ms": 919361,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245691480_tovky",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:11.480Z",
+    "device_timestamp_ms": 919361,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245694646_a2zz0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:14.646Z",
+    "device_timestamp_ms": 923413,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245694685_cfp6r",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:14.685Z",
+    "device_timestamp_ms": 926714,
+    "duration_ms": 3301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245696211_kg5br",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:16.211Z",
+    "device_timestamp_ms": 935265,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245698428_0frnl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:18.428Z",
+    "device_timestamp_ms": 937966,
+    "duration_ms": 2701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245698669_lhzgk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:18.669Z",
+    "device_timestamp_ms": 923413,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245698720_eltgs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:18.720Z",
+    "device_timestamp_ms": 926714,
+    "duration_ms": 3301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245700306_7mxof",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:20.306Z",
+    "device_timestamp_ms": 935265,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245702580_dox5c",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:22.580Z",
+    "device_timestamp_ms": 937966,
+    "duration_ms": 2701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245703051_6ffvs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:23.051Z",
+    "device_timestamp_ms": 926714,
+    "duration_ms": 3301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245703519_nl4iz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:23.519Z",
+    "device_timestamp_ms": 923413,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245704040_vgooy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:24.040Z",
+    "device_timestamp_ms": 943617,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245704710_xdzr3",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:24.710Z",
+    "device_timestamp_ms": 935265,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245705691_1ngod",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:25.691Z",
+    "device_timestamp_ms": 944868,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245706880_5p1uh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:26.880Z",
+    "device_timestamp_ms": 937966,
+    "duration_ms": 2701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245708211_tu2as",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:28.211Z",
+    "device_timestamp_ms": 943617,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245710008_vz8f0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:30.008Z",
+    "device_timestamp_ms": 944868,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245712577_neikf",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:48:32.577Z",
+    "device_timestamp_ms": 943617,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245714349_35cxy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:48:34.349Z",
+    "device_timestamp_ms": 944868,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245774719_960js",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:34.719Z",
+    "device_timestamp_ms": 1013164,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245775731_lbx98",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:35.731Z",
+    "device_timestamp_ms": 1014264,
+    "duration_ms": 1100,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245779126_o5urz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:39.125Z",
+    "device_timestamp_ms": 1013164,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245779664_4hn0a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:39.664Z",
+    "device_timestamp_ms": 1014264,
+    "duration_ms": 1100,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245780098_7hpxc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:40.098Z",
+    "device_timestamp_ms": 1018365,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245781325_68kng",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:41.325Z",
+    "device_timestamp_ms": 1020216,
+    "duration_ms": 1851,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245782962_pnicu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:42.962Z",
+    "device_timestamp_ms": 1013164,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245784064_7bcev",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:44.064Z",
+    "device_timestamp_ms": 1014264,
+    "duration_ms": 1100,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245784309_cvw49",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:44.309Z",
+    "device_timestamp_ms": 1018365,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245785533_pigbp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:45.533Z",
+    "device_timestamp_ms": 1024368,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245785588_xu0nu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:45.588Z",
+    "device_timestamp_ms": 1020216,
+    "duration_ms": 1851,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245786386_une9d",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:46.386Z",
+    "device_timestamp_ms": 1025619,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245788126_6bcvq",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:48.126Z",
+    "device_timestamp_ms": 1018365,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245789736_5bn43",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:49.736Z",
+    "device_timestamp_ms": 1024368,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245789790_vve7r",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:49.790Z",
+    "device_timestamp_ms": 1030070,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245790278_w1erl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:50.278Z",
+    "device_timestamp_ms": 1020216,
+    "duration_ms": 1851,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245790582_hk52p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:50.582Z",
+    "device_timestamp_ms": 1025619,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245791443_kfsd4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:51.443Z",
+    "device_timestamp_ms": 1031321,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245794009_dwd7p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:54.009Z",
+    "device_timestamp_ms": 1030070,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245794132_ydh7v",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:54.132Z",
+    "device_timestamp_ms": 1024368,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245794914_98dc7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:54.914Z",
+    "device_timestamp_ms": 1025619,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245795877_nyl4w",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:55.877Z",
+    "device_timestamp_ms": 1031321,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245796866_4j6eo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:56.866Z",
+    "device_timestamp_ms": 1036072,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245798377_43an0",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:49:58.377Z",
+    "device_timestamp_ms": 1030070,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245799896_7rm3q",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:49:59.896Z",
+    "device_timestamp_ms": 1031321,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245800960_sltmp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:00.960Z",
+    "device_timestamp_ms": 1039823,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245801044_nsf3p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:01.044Z",
+    "device_timestamp_ms": 1036072,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245804789_7ew5e",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:04.789Z",
+    "device_timestamp_ms": 1044274,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245805112_tz89e",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:05.112Z",
+    "device_timestamp_ms": 1039823,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245805389_57on1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:05.389Z",
+    "device_timestamp_ms": 1036072,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245807647_vk29d",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:07.647Z",
+    "device_timestamp_ms": 1047975,
+    "duration_ms": 3701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245808950_kv7uc",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:08.950Z",
+    "device_timestamp_ms": 1044274,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245809505_36i9n",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:09.505Z",
+    "device_timestamp_ms": 1039823,
+    "duration_ms": 3751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245811605_ocm60",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:11.605Z",
+    "device_timestamp_ms": 1052126,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245811795_wntje",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:11.795Z",
+    "device_timestamp_ms": 1047975,
+    "duration_ms": 3701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245813217_qqi7p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:13.217Z",
+    "device_timestamp_ms": 1053377,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245813314_5jkpt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:13.314Z",
+    "device_timestamp_ms": 1044274,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245815806_jy4v4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:15.806Z",
+    "device_timestamp_ms": 1052126,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245816148_x34yk",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:16.148Z",
+    "device_timestamp_ms": 1047975,
+    "duration_ms": 3701,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245817419_jpsea",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:17.419Z",
+    "device_timestamp_ms": 1053377,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245820179_j5lbs",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:50:20.179Z",
+    "device_timestamp_ms": 1052126,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245821767_912m7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:50:21.767Z",
+    "device_timestamp_ms": 1053377,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245908504_kg4ra",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:51:48.504Z",
+    "device_timestamp_ms": 1138942,
+    "duration_ms": 4101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245917442_lv2ec",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:51:57.442Z",
+    "device_timestamp_ms": 1157174,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245918985_jdd6g",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:51:58.985Z",
+    "device_timestamp_ms": 1158475,
+    "duration_ms": 1301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245921757_p9gbh",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:01.757Z",
+    "device_timestamp_ms": 1157174,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245923129_f1uch",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:03.129Z",
+    "device_timestamp_ms": 1158475,
+    "duration_ms": 1301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245926061_ieofb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:06.061Z",
+    "device_timestamp_ms": 1157174,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245927423_2n938",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:07.423Z",
+    "device_timestamp_ms": 1158475,
+    "duration_ms": 1301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245941694_ym9os",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:21.694Z",
+    "device_timestamp_ms": 1165577,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245942065_94og6",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:22.065Z",
+    "device_timestamp_ms": 1162826,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245945902_bnmsy",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:25.902Z",
+    "device_timestamp_ms": 1162826,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245945986_jss3m",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:25.986Z",
+    "device_timestamp_ms": 1165577,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245949292_qq1pq",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:29.292Z",
+    "device_timestamp_ms": 1165577,
+    "duration_ms": 2751,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245949298_fofh4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:29.298Z",
+    "device_timestamp_ms": 1162826,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245949340_rg7pb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:29.340Z",
+    "device_timestamp_ms": 1188128,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245950246_6g1ow",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:30.246Z",
+    "device_timestamp_ms": 1190229,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245953442_nvjjo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:33.442Z",
+    "device_timestamp_ms": 1188128,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245954842_e6jv9",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:34.842Z",
+    "device_timestamp_ms": 1190229,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245957843_7fe48",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:52:37.843Z",
+    "device_timestamp_ms": 1188128,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793245958881_cqmjl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:52:38.881Z",
+    "device_timestamp_ms": 1190229,
+    "duration_ms": 2101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246110226_692hu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:10.226Z",
+    "device_timestamp_ms": 1350248,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246110443_bv67u",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:10.443Z",
+    "device_timestamp_ms": 1350349,
+    "duration_ms": 101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246114478_ikiil",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:14.478Z",
+    "device_timestamp_ms": 1350248,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246114693_uigk2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:14.693Z",
+    "device_timestamp_ms": 1350349,
+    "duration_ms": 101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246116362_de34a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:16.362Z",
+    "device_timestamp_ms": 1355650,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246117846_m2ew1",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:17.846Z",
+    "device_timestamp_ms": 1357901,
+    "duration_ms": 2251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246118635_i9ew7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:18.635Z",
+    "device_timestamp_ms": 1350349,
+    "duration_ms": 101,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246118837_zm9ca",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:18.837Z",
+    "device_timestamp_ms": 1350248,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246120543_5g6ug",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:20.543Z",
+    "device_timestamp_ms": 1355650,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246122370_aqvkt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:22.370Z",
+    "device_timestamp_ms": 1357901,
+    "duration_ms": 2251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246124950_n88qb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:24.950Z",
+    "device_timestamp_ms": 1355650,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246126390_llp8v",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:26.390Z",
+    "device_timestamp_ms": 1357901,
+    "duration_ms": 2251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246129867_zxikp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:29.867Z",
+    "device_timestamp_ms": 1369052,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246132625_kry4o",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:32.625Z",
+    "device_timestamp_ms": 1371353,
+    "duration_ms": 2301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246134123_q95j4",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:34.123Z",
+    "device_timestamp_ms": 1369052,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246137038_d1sk7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:37.038Z",
+    "device_timestamp_ms": 1371353,
+    "duration_ms": 2301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246137045_kopa8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:37.045Z",
+    "device_timestamp_ms": 1376204,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246137812_7pu5x",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:37.812Z",
+    "device_timestamp_ms": 1377455,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246138482_t1864",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:38.482Z",
+    "device_timestamp_ms": 1369052,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246141163_kughu",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:41.163Z",
+    "device_timestamp_ms": 1376204,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246141193_uia4a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:41.193Z",
+    "device_timestamp_ms": 1371353,
+    "duration_ms": 2301,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246141413_kg8mr",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:41.413Z",
+    "device_timestamp_ms": 1377455,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246145619_bux12",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:45.619Z",
+    "device_timestamp_ms": 1376204,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246145799_btqdm",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:45.799Z",
+    "device_timestamp_ms": 1377455,
+    "duration_ms": 1251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246146047_hh9ci",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:46.047Z",
+    "device_timestamp_ms": 1381757,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246146077_n2ixw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:46.077Z",
+    "device_timestamp_ms": 1386008,
+    "duration_ms": 4251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246150158_w7y6s",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:50.158Z",
+    "device_timestamp_ms": 1381757,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246150512_64x40",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:50.511Z",
+    "device_timestamp_ms": 1386008,
+    "duration_ms": 4251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246151950_r18jm",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:51.950Z",
+    "device_timestamp_ms": 1391359,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246154455_yl2ed",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:54.455Z",
+    "device_timestamp_ms": 1381757,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246154691_s2gjl",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:55:54.691Z",
+    "device_timestamp_ms": 1386008,
+    "duration_ms": 4251,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246155941_xsede",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:55:55.941Z",
+    "device_timestamp_ms": 1391359,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246160277_xnnjw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:56:00.277Z",
+    "device_timestamp_ms": 1391359,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246162208_5yavo",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:56:02.208Z",
+    "device_timestamp_ms": 1402710,
+    "duration_ms": 11351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246166458_envjj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:56:06.458Z",
+    "device_timestamp_ms": 1402710,
+    "duration_ms": 11351,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246166504_xnm86",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:56:06.504Z",
+    "device_timestamp_ms": 1406761,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246253326_jfn3p",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:57:33.326Z",
+    "device_timestamp_ms": 1492131,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246255944_fn2g2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:57:35.944Z",
+    "device_timestamp_ms": 1494682,
+    "duration_ms": 2551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246257496_8xur8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:57:37.496Z",
+    "device_timestamp_ms": 1492131,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246259906_atsml",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:57:39.906Z",
+    "device_timestamp_ms": 1498783,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246260174_0qmnt",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:57:40.174Z",
+    "device_timestamp_ms": 1494682,
+    "duration_ms": 2551,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246264096_68vaz",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:57:44.096Z",
+    "device_timestamp_ms": 1498783,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246268108_m2dii",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:57:48.108Z",
+    "device_timestamp_ms": 1501184,
+    "duration_ms": 2401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246268475_a1f2a",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:57:48.475Z",
+    "device_timestamp_ms": 1498783,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246271975_ckp68",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:57:51.975Z",
+    "device_timestamp_ms": 1501184,
+    "duration_ms": 2401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246276338_0t6sa",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:57:56.338Z",
+    "device_timestamp_ms": 1501184,
+    "duration_ms": 2401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246288630_s2da7",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:58:08.630Z",
+    "device_timestamp_ms": 1515336,
+    "duration_ms": 2851,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246288941_u8htp",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:58:08.941Z",
+    "device_timestamp_ms": 1512485,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246292592_hj2qq",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:58:12.592Z",
+    "device_timestamp_ms": 1512485,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246296991_s81p2",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:58:16.991Z",
+    "device_timestamp_ms": 1512485,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246340996_c37kj",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:00.996Z",
+    "device_timestamp_ms": 1577906,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246341400_omgds",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:59:01.400Z",
+    "device_timestamp_ms": 1580957,
+    "duration_ms": 3051,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246342863_2auya",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:02.863Z",
+    "device_timestamp_ms": 1577906,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246345947_jlp9d",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:59:05.947Z",
+    "device_timestamp_ms": 1580957,
+    "duration_ms": 3051,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246346542_tm5qw",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:06.542Z",
+    "device_timestamp_ms": 1577906,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246348877_9h37l",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:08.877Z",
+    "device_timestamp_ms": 1587958,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246350622_3gnqb",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:59:10.622Z",
+    "device_timestamp_ms": 1589409,
+    "duration_ms": 1451,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246353062_ay4rx",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:13.062Z",
+    "device_timestamp_ms": 1587958,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246355905_rcnv8",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:15.905Z",
+    "device_timestamp_ms": 1595260,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246357618_bh3uf",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:59:17.618Z",
+    "device_timestamp_ms": 1596661,
+    "duration_ms": 1401,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246357752_mfxn6",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_detected",
+    "timestamp": "2026-10-29T03:59:17.752Z",
+    "device_timestamp_ms": 1587958,
+    "duration_ms": null,
+    "unassigned": false
+  },
+  {
+    "id": "evt_1793246361765_zelpd",
+    "room_id": "room238",
+    "sensor_id": "esp32-sensor-01",
+    "event": "motion_cleared",
+    "timestamp": "2026-10-29T03:59:21.765Z",
+    "device_timestamp_ms": 1596661,
+    "duration_ms": 1401,
+    "unassigned": false
   }
 ]

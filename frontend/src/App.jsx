@@ -2,8 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Navbar from './components/Navbar';
 import MotionRadar from './components/MotionRadar';
 import SummaryStats from './components/SummaryStats';
-import ActivityHeatmap from './components/ActivityHeatmap';
-import HourlyChart from './components/HourlyChart';
+import ActivityHistory from './components/ActivityHistory';
 import AnomalyFeed from './components/AnomalyFeed';
 import EventLogTable from './components/EventLogTable';
 import AICopilot from './components/AICopilot';
@@ -34,6 +33,14 @@ export default function App() {
   const [selectedRoom, setSelectedRoom] = useState('room238');
   const [isConnected, setIsConnected] = useState(false);
   const [latestEvent, setLatestEvent] = useState(null);
+
+  // History & Date Navigation State
+  const todayStr = new Date().toISOString().split('T')[0];
+  const [selectedDate, setSelectedDate] = useState(todayStr);
+  const [availableDates, setAvailableDates] = useState([]);
+  const [dailyTrendData, setDailyTrendData] = useState(null);
+  const [trendDays, setTrendDays] = useState(7);
+  const [daySummary, setDaySummary] = useState(null);
   
   // Sensors & Rooms Association State
   const [sensors, setSensors] = useState([]);
@@ -49,7 +56,12 @@ export default function App() {
 
   // Refs to prevent stale closures inside WebSocket callbacks
   const selectedRoomRef = useRef(selectedRoom);
+  const selectedDateRef = useRef(selectedDate);
+  const trendDaysRef = useRef(trendDays);
+
   useEffect(() => { selectedRoomRef.current = selectedRoom; }, [selectedRoom]);
+  useEffect(() => { selectedDateRef.current = selectedDate; }, [selectedDate]);
+  useEffect(() => { trendDaysRef.current = trendDays; }, [trendDays]);
 
   // Fetch sensors and rooms list
   const fetchSensors = useCallback(async () => {
@@ -72,14 +84,20 @@ export default function App() {
     }
   }, []);
 
-  // Fetch API data for selected room
-  const fetchRoomData = useCallback(async (roomId) => {
+  // Fetch API data for selected room and active history dates
+  const fetchRoomData = useCallback(async (roomId, dateStr, daysCount) => {
     try {
-      const [sumRes, hourlyRes, anomRes, evtsRes] = await Promise.all([
+      const activeDate = dateStr || selectedDateRef.current;
+      const days = daysCount || trendDaysRef.current;
+
+      const [sumRes, hourlyRes, anomRes, evtsRes, datesRes, dailyRes, daySumRes] = await Promise.all([
         fetch(`${API_BASE}/rooms/${roomId}/activity/summary?range=week`),
-        fetch(`${API_BASE}/rooms/${roomId}/activity/hourly`),
+        fetch(`${API_BASE}/rooms/${roomId}/activity/hourly?date=${activeDate}`),
         fetch(`${API_BASE}/rooms/${roomId}/anomalies?range=week`),
-        fetch(`${API_BASE}/rooms/${roomId}/events`)
+        fetch(`${API_BASE}/rooms/${roomId}/events`),
+        fetch(`${API_BASE}/rooms/${roomId}/activity/dates`),
+        fetch(`${API_BASE}/rooms/${roomId}/activity/daily?days=${days}`),
+        fetch(`${API_BASE}/rooms/${roomId}/activity/summary?date=${activeDate}`)
       ]);
 
       if (sumRes.ok) setSummary(await sumRes.json());
@@ -92,6 +110,12 @@ export default function App() {
           setLatestEvent(evtsList[0]);
         }
       }
+      if (datesRes.ok) {
+        const datesData = await datesRes.json();
+        setAvailableDates(datesData.dates || []);
+      }
+      if (dailyRes.ok) setDailyTrendData(await dailyRes.json());
+      if (daySumRes.ok) setDaySummary(await daySumRes.json());
     } catch (err) {
       console.error('Error fetching room data:', err);
     }
@@ -101,9 +125,10 @@ export default function App() {
     fetchSensors();
   }, [fetchSensors]);
 
+  // Refetch when room, date, or trend duration changes
   useEffect(() => {
-    fetchRoomData(selectedRoom);
-  }, [selectedRoom, fetchRoomData]);
+    fetchRoomData(selectedRoom, selectedDate, trendDays);
+  }, [selectedRoom, selectedDate, trendDays, fetchRoomData]);
 
   // Establish WebSocket Connection — connects ONCE, never torn down on room change
   useEffect(() => {
@@ -137,8 +162,8 @@ export default function App() {
                 const exists = prev.some(e => e.id === eventPayload.id || (e.timestamp === eventPayload.timestamp && e.event === eventPayload.event));
                 return exists ? prev : [eventPayload, ...prev];
               });
-              // Refresh metrics
-              fetchRoomData(currentRoom);
+              // Refresh metrics and daily charts
+              fetchRoomData(currentRoom, selectedDateRef.current, trendDaysRef.current);
             }
           }
 
@@ -151,7 +176,7 @@ export default function App() {
             if (data.payload.rooms) {
               setRooms(data.payload.rooms);
             }
-            fetchRoomData(selectedRoomRef.current);
+            fetchRoomData(selectedRoomRef.current, selectedDateRef.current, trendDaysRef.current);
           }
 
           // 3. Motion detected on a de-assigned / unassociated sensor
@@ -208,7 +233,7 @@ export default function App() {
       throw new Error(errMsg);
     }
     await fetchSensors();
-    await fetchRoomData(selectedRoom);
+    await fetchRoomData(selectedRoom, selectedDate, trendDays);
   };
 
   const handleDeassignSensor = async (sensorId) => {
@@ -226,7 +251,7 @@ export default function App() {
       throw new Error(errMsg);
     }
     await fetchSensors();
-    await fetchRoomData(selectedRoom);
+    await fetchRoomData(selectedRoom, selectedDate, trendDays);
   };
 
   const handleRegisterSensor = async (newSensorData) => {
@@ -305,7 +330,10 @@ export default function App() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar
         selectedRoom={selectedRoom}
-        setSelectedRoom={setSelectedRoom}
+        setSelectedRoom={(room) => {
+          setSelectedRoom(room);
+          setSelectedDate(todayStr); // Reset to today when switching room
+        }}
         isConnected={isConnected}
         onTriggerSim={handleTriggerSim}
         rooms={rooms}
@@ -378,10 +406,19 @@ export default function App() {
           <AnomalyFeed anomalies={anomalies} />
         </div>
 
-        {/* Right Column: Heatmap, Hourly Chart (Span 8 cols) */}
-        <div style={{ gridColumn: 'span 8', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          <ActivityHeatmap hourlyData={hourlyData} />
-          <HourlyChart hourlyData={hourlyData} />
+        {/* Right Column: Comprehensive Room Activity History Explorer (Span 8 cols) */}
+        <div style={{ gridColumn: 'span 8' }}>
+          <ActivityHistory
+            selectedRoom={selectedRoom}
+            selectedDate={selectedDate}
+            onSelectDate={setSelectedDate}
+            availableDates={availableDates}
+            hourlyData={hourlyData}
+            dailyTrendData={dailyTrendData}
+            trendDays={trendDays}
+            onSelectTrendDays={setTrendDays}
+            daySummary={daySummary}
+          />
         </div>
 
         {/* AI Intelligence Copilot (Full Width — 12 cols) */}
@@ -389,9 +426,13 @@ export default function App() {
           <AICopilot selectedRoom={selectedRoom} />
         </div>
 
-        {/* Raw Event Logs (Full Width — 12 cols) */}
+        {/* Raw Event Logs with Date Filter & CSV Export (Full Width — 12 cols) */}
         <div style={{ gridColumn: 'span 12' }}>
-          <EventLogTable events={events} />
+          <EventLogTable 
+            events={events} 
+            selectedDate={selectedDate}
+            onSelectDate={setSelectedDate}
+          />
         </div>
       </main>
 
@@ -408,6 +449,7 @@ export default function App() {
         onSimulateSensor={handleSimulateSensor}
         onSelectRoom={(room) => {
           setSelectedRoom(room);
+          setSelectedDate(todayStr);
           setIsSensorModalOpen(false);
         }}
       />

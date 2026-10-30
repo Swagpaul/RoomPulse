@@ -1,9 +1,10 @@
 import React from 'react';
-import { Grid } from 'lucide-react';
+import { Grid, Calendar } from 'lucide-react';
 
-export default function ActivityHeatmap({ hourlyData }) {
+export default function ActivityHeatmap({ hourlyData, selectedDate, isToday = true, dateLabel }) {
   const hours = Array.from({ length: 24 }, (_, i) => i);
   const maxCount = hourlyData ? Math.max(...hourlyData.map(h => h.count), 1) : 1;
+  const totalEventsInDay = hourlyData ? hourlyData.reduce((acc, curr) => acc + (curr.count || 0), 0) : 0;
 
   // Soft Pastel Intensity Palette
   const getCellStyles = (count) => {
@@ -17,11 +18,31 @@ export default function ActivityHeatmap({ hourlyData }) {
 
   return (
     <div className="pastel-card" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <Grid size={18} color="#0284c7" />
-          24-Hour Activity Density Heatmap
-        </h3>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
+            <Grid size={18} color="#0284c7" />
+            24-Hour Activity Density Heatmap
+          </h3>
+          {selectedDate && (
+            <span style={{
+              fontSize: '0.74rem',
+              fontWeight: 600,
+              padding: '0.15rem 0.55rem',
+              borderRadius: '999px',
+              background: isToday ? '#ecfdf5' : '#f0f9ff',
+              color: isToday ? '#059669' : '#0284c7',
+              border: `1px solid ${isToday ? '#a7f3d0' : '#bae6fd'}`,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.25rem'
+            }}>
+              <Calendar size={12} />
+              {dateLabel || selectedDate} {isToday ? '(Today)' : `(${totalEventsInDay} events)`}
+            </span>
+          )}
+        </div>
+
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.75rem', color: '#64748b' }}>
           <span>Low</span>
           <div style={{ width: '12px', height: '12px', background: '#e0f2fe', border: '1px solid #bae6fd', borderRadius: '3px' }} />
